@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>哆啦A梦</title>
+    <link rel="stylesheet" type="text/css" href="css/dlam.css"
+</head>
+<style>
+	
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+ 
+html, body {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+}
+ 
+body {
+    position: relative;
+}
+.box{
+    width: 600px;
+    height: 600px; 
+    background-color: #fff;
+    box-shadow: 0 0 8px #ccc;
+    margin: 20px 10px;
+    position: relative;
+    z-index: -50;
+}
+#dlam{
+    position: relative;
+    width: 100%;
+    height: 100%;
+ 
+}
+#dlam .head{
+    position: relative;
+    width: 250px;
+    height: 230px;
+    border: 2px solid #000;
+    border-top-left-radius: 50% 48%;
+    border-top-right-radius: 50% 48%;
+    border-bottom-left-radius: 30% 50%;
+    border-bottom-right-radius: 30% 50%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #059AE2;
+ 
+    /* background-image: linear-gradient(#000,#000);
+    background-repeat: no-repeat;
+    background-size: 75px 2px;
+    background-position: 20% 35%; */
+ 
+}
+#dlam .face{
+    width: 220px;
+    height: 190px;
+    border: 2px solid #000;
+  border-radius: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #fff;
+}
+#dlam .eyes{
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#dlam .left-eye, #dlam .right-eye{
+    width: 50%;
+    height: 70%;
+    border: 2px solid #000;
+    float: left;
+    border-radius: 100%;
+    position: relative;
+    background-color: #fff;
+}
+#dlam .left-eye{}
+#dlam .left-eye:before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 50% 50% 0 0;
+    transform:rotate(-45deg);
+    position: absolute;
+    top: 46%;
+    right: 5px;
+}
+#dlam .right-eye{}
+#dlam .right-eye:before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 50% 50% 0 0;
+    transform:rotate(-45deg);
+    position: absolute;
+    top: 46%;
+    left: 5px;
+}
+#dlam .mouth{
+    width: 120px;
+    height: 70px;
+    border: 2px solid #000;
+    border-top: none;
+    /* border-radius: 0 0 50% 50%/0 0 100% 100%; */
+
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+/*鼻子*/
+#dlam .mouth:before{
+    content:"";
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid #000;
+    position: absolute;
+    top: -75px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    box-shadow: inset 0px -5px 0 10px #DA0227;
+}
+#dlam .mouth:after{
+    content:"";
+    width: 0px;
+    height: 115px;
+    border-left: 1px solid #000;
+    position: absolute;
+    top: -45px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#dlam .mustache{
+    width: 75px;
+    height: 1px;
+    background-color: #000;
+    transform: rotate(0deg);
+    position: absolute;
+    /* top: 90px; */
+    top: 118px;
+    left: 35px;
+    box-shadow: 0 1px #555;
+    -webkit-box-reflect:right 28px;
+ 
+}
+#dlam .mustache:before{
+    content: "";
+    width: 75px;
+    height: 1px;
+    background-color: #000;
+    transform: rotate(10deg);
+    position: absolute;
+    top: -28px;
+    left: 0px;
+    box-shadow: 0 1px #555;
+}
+#dlam .mustache:after{
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #000;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 28px;
+    left: -3px;
+    box-shadow: 0 1px #555;
+} 
+
+
+</style>
+<body>
+    <!-- 盒子 -->
+    <div class="box">
+        <div id="dlam">
+            <div class="head">
+                <div class="face"></div>
+                <div class="eyes">
+                    <div class="left-eye"></div>
+                    <div class="right-eye"></div>
+                </div>
+                <div class="mouth"></div>
+                <div class="mustache"></div>
+            </div>
+            
+
+            
+      
+        </div>
+    </div>
+</body>
+</html>
